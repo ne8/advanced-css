@@ -27,14 +27,14 @@ body {
 .header{
    height: 95vh;
    background-image: linear-gradient(
-       to right bottom, 
+       to right bottom,
        rgba($color-primary-light, 0.8),
        rgba($color-primary-dark,0.8)),
         url('../assets/img/swiss-alps.jpg');
    background-size: cover;
-   background-position: top;   
+   background-position: top;
    position: relative;
-   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
    &__logo-box{
     position: absolute;
@@ -58,13 +58,13 @@ body {
     text-transform: uppercase;
     backface-visibility: hidden;
     margin-bottom: 5rem;
-    
+
     &--main{
         display: block;
         font-size:6rem;
         font-weight: 400;
         letter-spacing: 3.5rem;
-    
+
         animation-name: moveInLeft;
         animation-duration: 1s;
         animation-timing-function: ease-out;
@@ -143,12 +143,12 @@ body {
     &--white{
         background-color:$color-white;
         color:$color-gray-dark;
-        
+
         &::after{
             background-color: $color-white;
         }
     }
-    
+
     &::after{
         content: '';
         display: inline-block;
@@ -161,8 +161,8 @@ body {
         z-index: -1;
         transition: transform .4s, opacity .4s;
     }
-    
-  
+
+
     &:hover::after{
         transform: scaleX(1.4) scaleY(1.6);
         opacity: 0;
